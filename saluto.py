@@ -1,1 +1,2 @@
-print ('ciao sono lesly')
+nome = "lesly vera"
+print("ciao sono", lesly)
