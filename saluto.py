@@ -1,2 +1,2 @@
 nome = "lesly vera"
-print("ciao sono", lesly)
+print("ciao sono", nome)
