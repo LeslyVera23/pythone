@@ -12,5 +12,5 @@ base = int(input("ampiezza della base: "))
 i = 1
 while i <= base :
     print("" * ((base - i) // 2 ) +
-        char * (i + 1))
+        char * (i + 1 - (base % 2)))
     i += 2
