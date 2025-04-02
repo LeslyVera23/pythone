@@ -8,3 +8,6 @@ while valore_stringa != "exit":
 #print("Numeri letti sono : ", numeri_letti)
 #print("La somma dei numeri è : ", somma)
 print("La media dei numeri letti è: ", somma / numeri_letti)
+
+
+
