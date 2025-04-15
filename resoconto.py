@@ -18,13 +18,16 @@ def getTotalScore(self) :
 def getAverageScore(self) :
   return  self.__totale_score / self.__totale_quiz 
 
+#questi sono gli oggetti
 lesly = student("lesly", "vera")
 sofia = student ("sofia", "ganoa")
+#punteggio si sofia:
+sofia.addQuiz(100)
 
-sofia.addQuiz(100) #IL VOTO CHE HA PRESO 
-print(sofia.getName())    #STAMPIAMO IL NOME E COGNOME         
-print(sofia.getTotalScore())     #TOTALE   
-print(sofia.getAverageScore())     #TOTALE
+#stampa
+print(sofia.getName())             
+print(sofia.getTotalScore())       
+print(sofia.getAverageScore())     
   
     
     
