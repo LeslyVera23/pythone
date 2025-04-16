@@ -2,16 +2,35 @@
 #calcolare la media e indicare il valore massimo comprenssivo della riga in cui e stato trovato nel file
 #quindi chiedere massimo 3 numeri cosi da dopo fare la media
 
+
+
+
+#PUOI INSERIRE UNA LIBRERIA PER FACILITARE IL PROCESSO
+
+
 #chiediamo all'utente nome del file
 def main () :
    #chiedi utente nome file
   nome_file = input("inserisci il nome del tuo file: ") 
   #apertura file
   infile = open( nome_file , "r") 
-  linee = infile.readLines()  #da invocare
+  #legge righe del file
+  linee = infile.readLines() 
+  #chiudi il file
   infile.close()
-  for linea in linee :
-    print(linea)
+
+  #mette i dati output
+  numero_max = 0
+
+
+  for linea in linee(primo_numero) :
+    for linea in linee(secondo_numero):
+     numero = int(linea.strip())  #stripvengo eliminati gli spazi sia destra che a sinistra
+     numero = float(linea.strip())
+  
+#LIBRERIA CHE TRADUCE FRASI SCRITTE
+MAIN()
+
 
 
 
