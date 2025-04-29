@@ -1,19 +1,8 @@
-from bs4 import BeautifulSoup #importiamo libreria
-
-html_compatto = "<html>" \
-"<body>" \
-"<h1>Titolo prova python</h1>" \
-"<p>questo è un paragrafo</p>" \
-"</body>" \
-"</html>"
-
-html_compatto = "".join(x.strip() for x in html.split("\n"))   #rimuove gli spazi vuoti e le righe vuote
-print(html_compatto)       #mostra il codice HTML compatto in una sola riga
-
-doc = BeautifulSoup(html_compatto, "html.parser")
-print(doc.prettify())     #formatta il codice html
-
-root = doc.html
-print(type(root))          #elemento tag
-print(root.name.upper())   #struttura html
-print(root.name.lower())   #struttura html
+import urllib.request
+import bs4
+url = "https://amabilejewels.it/?srsltid=AfmBOopHJIjoHBn7kZ_hnPgr1HCApo-jHAisa_YU46n25RLjnB2e34lx"
+risultato = urllib.request.urlopen(url)  #Esegui la richiesta e apri la pagina
+theBytes = risultato.read()              #Legge il contenuto della pagina
+text = theBytes.decode()                 #Decodifica il contenuto in bytes della stringa 
+doc = bs4.BeautifulSoup(text, 'html.parser')  #analizza il contenuto HTML della pagina
+print(doc.prettify())                    #stampa il contenuto in html
