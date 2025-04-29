@@ -6,3 +6,7 @@ theBytes = risultato.read()              #Legge il contenuto della pagina
 text = theBytes.decode()                 #Decodifica il contenuto in bytes della stringa 
 doc = bs4.BeautifulSoup(text, 'html.parser')  #analizza il contenuto HTML della pagina
 print(doc.prettify())                    #stampa il contenuto in html
+
+
+
+
